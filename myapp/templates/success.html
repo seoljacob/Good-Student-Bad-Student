@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<h2>Your expected final grade is...</h2>
+{% if 0 in prediction %}
+    <h3>F</h3>
+{% elif 1 in prediction %}
+    <h3>D</h3>
+{% elif 2 in prediction %}
+    <h3>D+</h3>
+{% elif 3 in prediction %}
+    <h3>C</h3>
+{% elif 4 in prediction %}
+    <h3>C+</h3>
+{% elif 5 in prediction %}
+    <h3>B</h3>
+{% elif 6 in prediction %}
+    <h3>B+</h3>
+{% elif 7 in prediction %}
+    <h3>A</h3>
+{% endif %}
+<style>
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        font-size: 80px;
+        text-align: center;
+    }
+</style>
+{% endblock %}

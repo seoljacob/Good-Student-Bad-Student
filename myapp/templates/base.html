@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif; /* or any other modern font you prefer */
+            font-size: 16px; /* or any other font size you prefer */
+        }
+    </style>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <h1>Good Student Bad Student</h1>
+    {% block content %}{% endblock %}
+</body>
+</html>
